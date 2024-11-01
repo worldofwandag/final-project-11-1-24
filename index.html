@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/2822ebf5bb.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row__header">
+        <div class="header">
+          <div class="navbar">
+            <figure class="logo__wrapper">
+              <i class="fa-solid fa-film" style="color: #b197fc"></i>
+              <img src="./assets/pickflix-logo.png" alt="" class="logo" />
+            </figure>
+            <div class="navbar__links">
+              <a
+                href="#"
+                class="navbar__link link__hover-effect link__hover-effect--white"
+                >Home</a
+              >
+              <a
+                href="#"
+                class="navbar__link link__hover-effect link__hover-effect--white"
+                >Find Your Movie</a
+              >
+              <a href="#" class=".button btn__contact">Contact</a>
+            </div>
+          </div>
+          <div class="header__mid">
+            <h1>Pick your Flix</h1>
+            <div class="input__wrapper">
+              <input
+                type="text"
+                placeholder="Search by Name, Year, or Keyword"
+              />
+              <div class="search__wrapper">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            </div>
+          </div>
+          <div class="header__overlay"></div>
+        </div>
+      </div>
+    </div>
+
+    <section id="movies">
+      <div class="row row__movies">
+        <div class="filter__wrapper">
+          <h2 class="black__text">Search Results:</h2>
+          <div class="year__wrapper">
+            <h2 class="black__text">Year Range:</h2>
+            <p class="year__description">Use slider or enter min and max year</p>
+            <div class="year__input">
+              <div class="field">
+                <span>Min</span>
+                <input type="number" class="input__min" value="1995" />
+              </div>
+              <div class="input__seperator">-</div>
+              <div class="field">
+                <span>Max</span>
+                <input type="number" class="input__max" value="2024" />
+              </div>
+            </div>
+            <div class="slider">
+              <div class="slider__progress"></div>
+            </div>
+            <div class="range__input">
+              <input type="range" class="range__min" min="1995" max="2024" value="2000">
+              <input type="range" class="range__max" min="1995" max="2024" value="2020">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="index.js"></script>
+
+  </body>
+</html>
